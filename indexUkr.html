@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>Ukraine</title>
+  </head>
+  <style>
+      body {
+  margin: 0;
+  background-color: #ffebbc;
+  /*background-color: rgb(16, 97, 178, 0.6);*/
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+.contTop {
+  background-image: url(https://s2.best-wallpaper.net/wallpaper/iphone/1707/Ukraine-Carpathians-forest-mountains-fog-clouds-sun-morning_iphone_1080x1920.jpg);
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: color;
+  background-position: right;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  height: 700px;
+  background-color: (0 0 0 0.3);
+}
+.top {
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.top img {
+  padding-right: 10px;
+}
+.logo {
+  font-size: 24px;
+  margin-top: 0;
+}
+.topTextImg {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 9%;
+}
+.topText {
+  width: 50%;
+  text-align: left;
+  margin-left: 10%;
+}
+.topText h1 {
+  font-size: 42px;
+  color: rgb(217, 176, 36);
+  margin-bottom: 20px;
+  text-shadow: rgba(255, 255, 255, 0.5);
+}
+.topText h2 {
+  font-size: 38px;
+  margin-top: 10px;
+}
+.signup {
+  box-shadow: 0px 10px 30px 0px black;
+  width: 300px;
+  border-radius: 40px;
+  font-size: 24px;
+  padding: 10px;
+  background-color: rgb(20, 63, 148, 0.8);
+  margin-top: 30px;
+  cursor: pointer;
+  color: #ffebbc;
+}
+.signup:hover {
+  background-color: rgb(20, 63, 148, 0.6);
+  transition: all 25 ease-in-out;
+}
+.topImg {
+  opacity: 0.9;
+}
+.numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding-top: 50px;
+}
+
+.numbers h1 {
+  color: rgb(20, 63, 148, 0.8);
+  margin-bottom: 0;
+}
+.numbers p {
+  margin-top: 10px;
+}
+.more {
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.more a {
+  text-decoration: none;
+}
+.more h5 {
+  margin: 0;
+  padding-top: 15px;
+
+  color: rgb(217, 176, 36);
+  font-weight: 500;
+}
+.sights {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 50px 100px 0px 100px;
+}
+.sights img {
+  border-radius: 10px;
+}
+.sights img:hover {
+  box-shadow: 0px 10px 20px 0px black;
+}
+.sights h2 {
+  margin-top: 0;
+}
+.sight1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 0.9;
+  font-size: 22px;
+  padding-bottom: 50px;
+}
+.sight1 .rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 45%;
+}
+.sights h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: rgb(217, 176, 36);
+}
+.rows div {
+  padding-left: 10px;
+}
+.h2symbol {
+  margin: 0;
+  padding-top: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 50px 100px 0px 100px;
+}
+.symbols {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 50px 100px 0px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.symbols div {
+  width: 15%;
+}
+.symbols img {
+  width: 150px;
+  height: 150px;
+  border-radius: 360px;
+}
+.symbols img:hover {
+  box-shadow: 5px 5px 10px 5px rgb(20, 63, 148, 0.8);
+}
+.form {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 50px 100px 0px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form img {
+  border-radius: 10px;
+}
+.form h1 {
+  margin-top: 0;
+  text-align: left;
+  padding-left: 15%;
+  margin-bottom: 10px;
+  font-size: 38px;
+}
+.form h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 38px;
+}
+.form p {
+  text-align: center;
+  font-size: 18px;
+}
+.form div {
+  width: 50%;
+}
+h2.ukr {
+  text-align: right;
+  padding-right: 15%;
+  color: rgb(217, 176, 36);
+  font-size: 42px;
+}
+#butform {
+  margin: 0 auto;
+  padding-top: 10%;
+  width: 300px;
+  border: 0;
+}
+.footer {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 50px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer  img {
+
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  padding-left: 15px;
+}
+
+  </style>
+  <body>
+    <section class="contTop">
+      <div class="top">
+        <p class="logo"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/642/original/ukraine_flag.png?1653821616" width="70px" ></p>
+        <div class="topIcons">
+          <a href="https://www.instagram.com/ukraine.ua/"
+            ><img
+              src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-instagram-icon-download-icons-12.png"
+              width="35"
+              alt="logo ig, instagram icon download icons"
+          /></a>
+          <a href="https://t.me/kyivindependent"
+            ><img
+              src="https://www.freepnglogos.com/uploads/telegram-logo-12.png"
+              width="30"
+              alt="telegram logo"
+          /></a>
+          <a href="https://www.facebook.com/UkraineUA.MFA"
+            ><img
+              src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-png-transparent-svg-vector-bie-supply-18.png"
+              width="35"
+              alt="Facebook Icon "
+          /></a>
+        </div>
+        </div>
+        <div class="topTextImg">
+          <div class="topText">
+            <h1>Discover</h1>
+            <h2>Wonderful Ukraine</h2>
+            <button class="signup">Sign up for a tour</button>
+          </div>
+          <div class="topImg">
+              <img class="flag" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/643/original/pngwing.com_%282%29.png?1653821645" width="400">
+        
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="numbers">
+        
+        <div>
+          <h1>603,549 km²</h1>
+          <p>Total area</p>
+        </div>
+        
+        <div>
+          <h1>460</h1>
+          <p>
+Big cities</p>
+        </div>
+        <div>
+          <h1>2000</h1>
+          <p>Sights</p>
+        </div>
+         <div>
+          <h1>40 997 699</h1>
+          <p>
+Population</p>
+        </div>
+
+    </section>
+    <section class="more">
+      <a href="https://en.wikipedia.org/wiki/Ukraine" ><h5>----READ MORE----</h5> </a>
+    </section>
+    <section class="sights">
+       <h2>Interesting places</h2>
+       <div class="sight1">
+           <div class="rows">
+            <img src="https://tamtour.com.ua/local/image/451/016/photo-2022-02-18-16-14-28.jpg" width="200px" height="180px">
+         <div>
+               <h4> Tunnel of love (city of Klevan)</h4>
+               This attraction is  popular among romantics, newlyweds, and photographers who get a lot of  interesting pictures.
+           </div>
+        </div>
+           <div class="rows">
+              <img src="https://storge.pic2.me/c/1360x800/874/5f883716a30a99.62152693.jpg" width="200px" height="180px">
+         <div>
+               <h4> Ukrainian Carpathians</h4>
+               In winter, the region turns into a world-class ski resort, with slopes of different levels.
+           </div>
+           </div>
+       </div>
+       <div class="sight1">
+           <div class="rows">
+            <img src="https://static.dw.com/image/60155326_303.jpg" width="200px" height="180px">
+         <div>
+               <h4> Independence Square (Kyiv)</h4>
+               Here people like to wander around the fountains, take pictures next to the majestic monument and just take a walk.
+           </div>
+        </div>
+           <div class="rows">
+              <img src="https://tamtour.com.ua/local/image/048/014/izobrazhenie-viber-2020-07-31-14-41-54d.jpg" width="200px" height="180px">
+         <div>
+               <h4> Lemurian lake</h4>
+               The Lemurian lake is called the Ukrainian Dead Sea. The pink color appears due to Dunaliella algae.
+           </div>
+       </div>
+    </section>
+    <h2 class="h2symbol">National symbols </h2>
+    <section class="symbols">
+        <div>
+ <img src="https://images.unian.net/photos/2020_08/thumb_files/1200_0_1597857143-1860.jpg">
+        <p>The trident is considered a sign of the trinity of God: Father, Son and Holy Spirit.</p>
+</div>
+        <div>
+            <img src="https://taganrogprav.ru/wp-content/uploads/2021/10/kalina.jpg">
+            <p>Kalina is considered a symbol of beauty, happiness, love</p>
+        </div>
+        <div>
+            
+<img src="https://bipbap.ru/wp-content/uploads/2018/07/0_69f43_b2ec6e37_XL.jpg">
+<p>The stork is a symbol of parental love, family values, fertility.</p>
+        </div>
+        <div>
+            <img src="https://media.dyvys.info/2019/10/20181009212057-3968.jpg">
+            <p>A wreath is a headdress that is considered the personal sun of every girl.</p>
+        </div>
+    <div>
+            <img src="http://www.ruskniga.com/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/1/5/15-7.jpg">
+      <p>the stripes mean cloudless skies and yellow wheat in the field</p> 
+        </div>
+
+
+</section>
+<section class="form">
+    <img src="https://etnoxata.com.ua/image/catalog/stat3/09_2016/03_09/00.jpg" width="50%">
+    <div> <h1>Enjoy your <br></h1>
+    <h2>      holiday in </h2>
+<h2 class="ukr">           Ukraine</h2>
+<div id="butform"><button class="signup" >Get started</button></div>
+ <p>If you are under 18 it will be free</p>
+</div>
+   
+</section>
+<section class="footer"> 
+   <P>Privacy Policy</P> 
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/642/original/ukraine_flag.png?1653821616" width="70px"  >
+ <div class="topIcons">
+          <a href="https://www.instagram.com/ukraine.ua/"
+            ><img
+              src="https://www.freepnglogos.com/uploads/logo-ig-png/logo-ig-instagram-icon-download-icons-12.png"
+              width="35"
+              alt="logo ig, instagram icon download icons"
+          /></a>
+          <a href="https://t.me/kyivindependent"
+            ><img
+              src="https://www.freepnglogos.com/uploads/telegram-logo-12.png"
+              width="30"
+              alt="telegram logo"
+          /></a>
+          <a href="https://www.facebook.com/UkraineUA.MFA"
+            ><img
+              src="https://www.freepnglogos.com/uploads/logo-facebook-png/logo-facebook-facebook-logo-png-transparent-svg-vector-bie-supply-18.png"
+              width="35"
+              alt="Facebook Icon "
+          /></a>
+        </div>
+        
+</section>
+
+<script>
+    function signup(){
+     let name = prompt("Enter your name: ");
+      let age = prompt("How old are you: ");
+      if (age>=18){
+          let email= prompt("Enter your email: ")
+          alert("Thank you, "+name+"! You have signed up!"+
+          "We will send you the price on your email")
+      }
+      else if(age<18){
+          alert("Thank you, "+name+"! You have signed up!"+"It will be free for you)")
+      }
+    }
+    let button= document.querySelector("button");
+    let button2=document.getElementById("butform")
+    button.addEventListener("click", signup);
+     button2.addEventListener("click", signup);
+</script>
+
+  </body>
+</html>
